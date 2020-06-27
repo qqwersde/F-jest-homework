@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-unresolved
 import Recipient from "../Recipient";
 
 describe("acceptInjection", () => {
@@ -10,7 +11,7 @@ describe("acceptInjection", () => {
     jest.doMock("../covid19Vaccine", () => {
       return jest.fn().mockImplementation(() => {
         return {
-          composition: [],
+          composition: ["Suger"],
         };
       });
     });
